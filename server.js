@@ -45,14 +45,14 @@ app.post("/api/add", async (req, res) => {
   }
 });
 
-// app.get("/api/view", async (req, res) => {
-//   try {
-//     let result = await associateModelObj.find();
-//     res.json(result);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// });
+app.get("/api/view", async (req, res) => {
+  try {
+    let result = await associateModelObj.find();
+    res.json(result);
+  } catch (err) {
+    console.log(err);
+  }
+});
 
 app.post("/api/delete", async (req, res) => {
   try {
@@ -96,14 +96,14 @@ app.post("/api/addbooking", async (req, res) => {
   }
 });
 
-// app.get("/api/viewbooking", async (req, res) => {
-//   try {
-//     let result = await bookingModelObj.find();
-//     res.json(result);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// });
+app.get("/api/viewbooking", async (req, res) => {
+  try {
+    let result = await bookingModelObj.find();
+    res.json(result);
+  } catch (err) {
+    console.log(err);
+  }
+});
 
 app.post("/api/deletebooking", async (req, res) => {
   try {
@@ -128,14 +128,14 @@ app.post("/api/signup", async (req, res) => {
   }
 });
 
-// app.get("/api/login", async (req, res) => {
-//   try {
-//     let result = await userModelObj.find();
-//     res.json(result);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// });
+app.get("/api/login", async (req, res) => {
+  try {
+    let result = await userModelObj.find();
+    res.json(result);
+  } catch (err) {
+    console.log(err);
+  }
+});
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + 

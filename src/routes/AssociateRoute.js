@@ -21,7 +21,7 @@ router.get("/api/view", async (req, res) => {
     console.log(err);
   }
 });
-// title==ictkid
+
 router.post("/api/delete", async (req, res) => {
   try {
     let result = await associateModelObj.deleteOne({ ictkid: req.body.ictkid });

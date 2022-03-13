@@ -13,14 +13,14 @@ router.post("/addbooking", async (req, res) => {
   }
 });
 
-// router.get("/viewbooking", async (req, res) => {
-//   try {
-//     let result = await bookingModelObj.find();
-//     res.json(result);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// });
+router.get("/viewbooking", async (req, res) => {
+  try {
+    let result = await bookingModelObj.find();
+    res.json(result);
+  } catch (err) {
+    console.log(err);
+  }
+});
 
 router.post("/updatebooking", async (req, res) => {
   try {
